@@ -1,6 +1,6 @@
 ### Brain Games Python project
 
-[![Github Actions Status](https://github.com/Ulanof-code/python-project-lvl1/workflows/Python%20CI/badge.svg)](https://github.com/Ulanof-code/python-project-lvl1/actions)
+[![Github Actions Status](https://github.com/Ulanof-code/python-project-lvl1/workflows/Super-Linter/badge.svg)](https://github.com/Ulanof-code/python-project-lvl1/actions)
 
 
 ### Maintainability
