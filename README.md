@@ -6,3 +6,6 @@
 
 ### Github workflow status badge
 ![Python package](https://github.com/Ulanof-code/python-project-lvl1/workflows/Python%20package/badge.svg)
+
+### Asciinema brain-even
+[![asciicast](https://asciinema.org/a/YLP7nhE1qAFjdQ42ZMZTXrg1T.svg)](https://asciinema.org/a/YLP7nhE1qAFjdQ42ZMZTXrg1T)
