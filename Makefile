@@ -1,5 +1,8 @@
-python3 -m pip install --user dist/.whl'install:
+install:
 	poetry install
+
+brain-even:
+	poetry run brain-even
 
 brain-games:
 	poetry run brain-games
