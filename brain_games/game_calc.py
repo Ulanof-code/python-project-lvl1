@@ -48,7 +48,7 @@ def multiplication_operation():
         print("Correct!")
         return True
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) * int(b))))
+        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) * int(b))))  # noqa: E501
         return False
 
 
@@ -61,7 +61,7 @@ def addition_operation():
         print("Correct!")
         return True
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) + int(b))))
+        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) + int(b))))  # noqa: E501
         print("Let's try again, Sam!")
         return False
 
@@ -75,6 +75,6 @@ def subtraction_operation():
         print("Correct!")
         return True
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) - int(b))))
+        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) - int(b))))  # noqa: E501
         print("Let's try again, Sam!")
         return False
