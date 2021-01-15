@@ -1,6 +1,9 @@
 install:
 	poetry install
 
+brain-calc:
+	poetry run brain-calc
+
 brain-even:
 	poetry run brain-even
 
