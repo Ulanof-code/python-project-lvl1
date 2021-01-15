@@ -8,7 +8,7 @@
 ![Python package](https://github.com/Ulanof-code/python-project-lvl1/workflows/Python%20package/badge.svg)
 
 ### Asciinema brain-even
-[![asciicast](https://asciinema.org/a/YLP7nhE1qAFjdQ42ZMZTXrg1T.svg)](https://asciinema.org/a/YLP7nhE1qAFjdQ42ZMZTXrg1T)
+[![asciicast](https://asciinema.org/a/YLP7nhE1qAFjdQ42ZMZTXrg1T.svg)](https://asciinema.org/a/YLP7nhE1qAFjdQ42ZMZTXrg1T width="48")
 
 ### Asciinema brain-calc
-<a href="https://asciinema.org/a/FsZhTozrPy1oA7L88sVzEnX7q" target="_blank"><img src="https://asciinema.org/a/FsZhTozrPy1oA7L88sVzEnX7q.svg" /align="left" height="48" width="48"></a>
+[![asciicast](https://asciinema.org/a/FsZhTozrPy1oA7L88sVzEnX7q.svg)](https://asciinema.org/a/FsZhTozrPy1oA7L88sVzEnX7q width="48")
