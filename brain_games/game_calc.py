@@ -8,8 +8,8 @@ def start_calc_game():
     print('What is the result of the expression?')
     counter = 0
     while counter < 3:
-        operation = randint(0, 2) # 0 - multiplication; 1 - addition; 2 - subtraction
-        if operation == 0: # multiplication operation
+        operation = randint(0, 2)  # 0 - multiplic; 1 - addit; 2 - subtract
+        if operation == 0:  # multiplication operation
             if multiplication_operation():
                 counter = counter + 1
                 continue
@@ -18,7 +18,7 @@ def start_calc_game():
                 print("Let's try again, {}!".format(name))
                 continue
 
-        if operation == 1: # addition operation
+        if operation == 1:  # addition operation
             if addition_operation():
                 counter = counter + 1
                 continue
@@ -27,7 +27,7 @@ def start_calc_game():
                 print("Let's try again, {}!".format(name))
                 continue
 
-        if operation == 2: # subtraction operation
+        if operation == 2:  # subtraction operation
             if subtraction_operation():
                 counter = counter + 1
                 continue
@@ -78,4 +78,3 @@ def subtraction_operation():
         print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) - int(b))))
         print("Let's try again, Sam!")
         return False
-
