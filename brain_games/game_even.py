@@ -1,10 +1,10 @@
 import prompt
 from random import randint
+from brain_games.cli import welcome_user
 
 
 def start_even_game():
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
+    name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     counter = 0
     while counter < 3:
