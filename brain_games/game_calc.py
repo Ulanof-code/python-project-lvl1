@@ -78,4 +78,3 @@ def subtraction_operation():
         print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) - int(b))))  # noqa: E501
         print("Let's try again, Sam!")
         return False
-    
