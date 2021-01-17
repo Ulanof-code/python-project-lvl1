@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-
-from brain_games.common_components.cli import welcome_user
+import prompt
+from brain_games.common_components.greetings import welcome_user
 
 
 def main():
