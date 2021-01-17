@@ -17,7 +17,7 @@ def start_gcd_game():
             print("Correct!")
             counter = counter + 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was '{calc_gcd(number1,number2)}'")
+            print(f"{answer} is wrong answer ;(. Correct answer was '{calc_gcd(number1,number2)}'")  # noqa: E501
             print(f"Let's try again, {user_name}!")
             return
     if count(counter):
