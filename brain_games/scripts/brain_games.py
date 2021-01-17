@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import prompt
+
 from brain_games.common_components.greetings import welcome_user
 
 

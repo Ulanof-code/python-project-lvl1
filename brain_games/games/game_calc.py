@@ -5,7 +5,7 @@ import prompt
 
 
 def start_calc_game():
-    name = welcome_user()
+    user_name = welcome_user()
     print('What is the result of the expression?')
     counter = 0
     while not count(counter):
@@ -15,7 +15,7 @@ def start_calc_game():
                 counter = counter + 1
                 continue
             else:
-                print("Let's try again, {}!".format(name))
+                print(f"Let's try again, {user_name}!")
                 return
 
         if operation == 1:  # addition operation
@@ -23,7 +23,7 @@ def start_calc_game():
                 counter = counter + 1
                 continue
             else:
-                print("Let's try again, {}!".format(name))
+                print(f"Let's try again, {user_name}!")
                 return
 
         if operation == 2:  # subtraction operation
@@ -31,46 +31,46 @@ def start_calc_game():
                 counter = counter + 1
                 continue
             else:
-                print("Let's try again, {}!".format(name))
+                print(f"Let's try again, {user_name}!")
                 return
     if counter == 3:
-        print("Congratulations, {}!".format(name))
+        print(f"Congratulations, {user_name}!")
 
 
 def multiplication_operation():
     a = str(randint(0, 25))
     b = str(randint(0, 25))
-    print('Question: {}'.format(a + ' * ' + b))
+    print(f'Question: {a + " * " + b}')
     answer = prompt.string('Your answer: ')
     if int(answer) == (int(a) * int(b)):
         print("Correct!")
         return True
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) * int(b))))  # noqa: E501
+        print(f"'{answer}' is wrong answer ;(. Correct answer was '{int(a)*int(b)}'")  # noqa: E501
         return False
 
 
 def addition_operation():
     a = str(randint(0, 25))
     b = str(randint(0, 25))
-    print('Question: {}'.format(a + ' + ' + b))
+    print(f'Question: {a + " + " + b}')
     answer = prompt.string('Your answer: ')
     if int(answer) == (int(a) + int(b)):
         print("Correct!")
         return True
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) + int(b))))  # noqa: E501
+        print(f"'{answer}' is wrong answer ;(. Correct answer was '{int(a)+int(b)}'")  # noqa: E501
         return False
 
 
 def subtraction_operation():
     a = str(randint(0, 25))
     b = str(randint(0, int(a)))
-    print('Question: {}'.format(a + ' - ' + b))
+    print(f'Question: {a + " - " + b}')
     answer = prompt.string('Your answer: ')
     if int(answer) == (int(a) - int(b)):
         print("Correct!")
         return True
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, (int(a) - int(b))))  # noqa: E501
+        print(f"'{answer}' is wrong answer ;(. Correct answer was '{int(a) - int(b)}'")  # noqa: E501
         return False
