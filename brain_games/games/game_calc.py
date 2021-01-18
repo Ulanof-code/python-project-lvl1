@@ -33,7 +33,7 @@ def start_calc_game():
             else:
                 print(f"Let's try again, {user_name}!")
                 return
-    if counter == 3:
+    if count(counter):
         print(f"Congratulations, {user_name}!")
 
 
