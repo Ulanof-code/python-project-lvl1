@@ -12,14 +12,15 @@ def start_progression_game():
         step = randint(2, 5)
         final_value = randint(step * 10, 50)
         starting_value = randint(0, (final_value - (step * 10)))
-        secret_numb = randint(0, len(build_list(starting_value, final_value, step)))
+        secret_numb = randint(0, len(build_list(starting_value, final_value, step)) - 1)
+        correct_answer = build_list(starting_value, final_value, step)[secret_numb]
         print("Question: " + build_progression(build_list(starting_value, final_value, step), secret_numb))
         answer = prompt.string('Your answer: ')
-        if build_list(starting_value, final_value, step)[secret_numb] == int(answer):
-            print("Correct!")
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{secret_numb}'.Let's try again, {user_name}!")
+        if type(answer) != int or correct_answer != int(answer):
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.Let's try again, {user_name}!")
             return
+        elif correct_answer == int(answer):
+            print("Correct!")
     if count(counter):
         print(f'Congratularions, {user_name}!')
 
