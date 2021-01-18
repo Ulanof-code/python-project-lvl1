@@ -18,6 +18,7 @@ def start_progression_game():
         answer = prompt.string('Your answer: ')
         if correct_answer == int(answer):
             print("Correct!")
+            counter = counter + 1
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.Let's try again, {user_name}!")
             return
