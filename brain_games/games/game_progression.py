@@ -12,15 +12,15 @@ def start_progression_game():
         step = randint(2, 5)
         final_value = randint(step * 10, 50)
         starting_value = randint(0, (final_value - (step * 10)))
-        secret_numb = randint(0, len(build_list(starting_value, final_value, step)) - 1)
-        correct_answer = build_list(starting_value, final_value, step)[secret_numb]
-        print("Question: " + build_progression(build_list(starting_value, final_value, step), secret_numb))
+        secret_numb = randint(0, len(build_list(starting_value, final_value, step)) - 1) # noqa E501
+        correct_answer = build_list(starting_value, final_value, step)[secret_numb] # noqa E501
+        print("Question: " + build_progression(build_list(starting_value, final_value, step), secret_numb)) # noqa E501
         answer = prompt.string('Your answer: ')
         if correct_answer == int(answer):
             print("Correct!")
             counter = counter + 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.Let's try again, {user_name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.Let's try again, {user_name}!") # noqa E501
             return
     if count(counter):
         print(f'Congratularions, {user_name}!')
