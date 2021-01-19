@@ -24,7 +24,9 @@ def start_prime_game():
 
 
 def is_prime(num):
-    if num < 2 or num % 2 == 0:
+    if num == 2:
+        return True
+    elif num < 2 or num % 2 == 0:
         return False
     divider = 3
     while divider <= num // 2:
