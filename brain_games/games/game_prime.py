@@ -23,12 +23,12 @@ def start_prime_game():
         print(f'Congratularions, {user_name}!')
 
 
-def is_prime(value):
-    if value < 2 or value % 2 == 0:
+def is_prime(num):
+    if num < 2 or num % 2 == 0:
         return False
     divider = 3
-    while divider <= value // 2:
-        if value % divider == 0:
+    while divider <= num // 2:
+        if num % divider == 0:
             return False
         divider += 1
     return True
