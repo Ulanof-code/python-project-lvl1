@@ -22,6 +22,7 @@ def start_prime_game():
     if count(counter):
         print(f'Congratularions, {user_name}!')
 
+
 def is_prime(value):
     if value < 2 or value % 2 == 0:
         return False
