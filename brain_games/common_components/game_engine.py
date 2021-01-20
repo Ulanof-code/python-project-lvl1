@@ -19,3 +19,5 @@ def start(game):
                   "Let's try again, '{}'"
                   .format(answer, result, user_name))
             return
+    if count(counter):
+        print('Congratulations, {}'.format(user_name))
