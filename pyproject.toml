@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "The Game of the Brain-Game. Choose one of five games and test your abilities."
 authors = ["Nikolay Ulanov <iamnickolasulanov@gmail.com>"]
+repository = "https://github.com/Ulanof-code/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
