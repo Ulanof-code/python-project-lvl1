@@ -14,7 +14,7 @@ def set_value_and_result():
     step = randint(2, 5)
     final_value = randint(step * 10, 50)
     start_value = randint(0, (final_value - (step * 10)))
-    secret_numb = randint(0, len(build_list(start_value, final_value, step)) - 1)
+    secret_numb = randint(0, len(build_list(start_value, final_value, step)) - 1) # noqa E501
     result = build_list(start_value, final_value, step)[secret_numb] # noqa E501
     value = build_progression(build_list(start_value, final_value, step), secret_numb) # noqa E501
     return value, str(result) # noqa E501
