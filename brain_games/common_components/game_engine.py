@@ -10,7 +10,7 @@ def start(game):
     while not count(counter):
         value, result = game.set_value_and_result()
         print(f'Question {value}:')
-        answer = string('Your answer :')
+        answer = string('Your answer: ')
         if answer == result:
             print('Correct!')
             counter += 1
