@@ -16,7 +16,7 @@ def start(game):
             counter += 1
         else:
             print("'{}' is wrong answer ;(. Correct answer was '{}'."
-                  "Let's try again, '{}'"
+                  "Let's try again, {}!"
                   .format(answer, result, user_name))
             return
     if count(counter):
