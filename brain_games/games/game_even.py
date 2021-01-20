@@ -1,33 +1,18 @@
-import prompt
 from random import randint
-from brain_games.common_components.greetings import welcome_user
 
 
-def start_even_game():
-    user_name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    counter = 0
-    while counter < 3:
-        random_number = randint(1, 10000)
-        print(f'Question: {random_number}')
-        answer = prompt.string('Your answer: ')
-        if random_number % 2 == 0:
-            if answer == 'yes':
-                counter = counter + 1
-                print('Correct!')
-            else:
-                counter = 0
-                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-                print(f"Let's try again, {user_name}!")
-                continue
-        elif random_number % 2 == 1:
-            if answer == 'no':
-                counter = counter + 1
-                print('Correct!')
-            else:
-                counter = 0
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {user_name}!")
-                continue
-        if counter == 3:
-            print(f'Congratulations, {user_name}!')
+GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def set_value_and_result():
+    """The function returns the value to start the game and the correct answer"""
+    value = randint(0, 100)
+    result = 'yes' if get_result(value) else 'no'
+    return value, result
+
+
+def get_result(value):
+    """The function checks whether the value is even or odd.
+     If the value is even,it is True,
+     if it is odd, it is False."""
+    return True if value % 2 == 0 else False

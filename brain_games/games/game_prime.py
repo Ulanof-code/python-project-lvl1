@@ -1,36 +1,24 @@
-from brain_games.common_components.round_counter import count
-from brain_games.common_components.greetings import welcome_user
 from random import randint
-import prompt
+
+GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def start_prime_game():
-    user_name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    counter = 0
-    while not count(counter):
-        num = randint(0, 50)
-        print(f"Question: {num}")
-        answer = prompt.string('Your answer: ')
-        correct_answer = 'yes' if is_prime(num) else 'no'
-        if answer == correct_answer:
-            print('Correct!')
-            counter = counter + 1
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.Let's try again, {user_name}!")  # noqa E501
-            return
-    if count(counter):
-        print(f'Congratularions, {user_name}!')
+def set_value_and_result():
+    """The function sets the values and returns the correct result"""
+    value = randint(1, 3571)
+    result = 'yes' if get_result(value) else 'no'
+    return value, result
 
 
-def is_prime(num):
-    if num == 2:
-        return True
-    elif num < 2 or num % 2 == 0:
+def get_result(value):
+    """The function checks if the number is prime.
+    The function returns True if the number is prime,
+    otherwise it returns False"""
+    if value < 2 or value % 2 == 0:
         return False
-    divider = 3
-    while divider <= num // 2:
-        if num % divider == 0:
+    divisor = 3
+    while divisor <= value // 2:
+        if value % divisor == 0:
             return False
-        divider += 1
+        divisor += 1
     return True
