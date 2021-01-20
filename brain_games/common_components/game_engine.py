@@ -20,4 +20,4 @@ def start(game):
                   .format(answer, result, user_name))
             return
     if count(counter):
-        print('Congratulations, {}'.format(user_name))
+        print('Congratulations, {}!'.format(user_name))
