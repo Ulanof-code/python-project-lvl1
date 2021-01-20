@@ -13,7 +13,8 @@ def set_value_and_result():
 
 
 def get_result(value1, value2):
-    """The function calculates the greatest common divisor and returns the result"""
+    """The function calculates the greatest
+     common divisor and returns the result"""
     while value1 != value2:
         if value1 > value2:
             value1 = value1 - value2

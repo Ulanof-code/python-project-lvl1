@@ -5,7 +5,8 @@ GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def set_value_and_result():
-    """The function returns the value to start the game and the correct answer"""
+    """The function returns the value to start the game
+     and the correct answer"""
     value = randint(0, 100)
     result = 'yes' if get_result(value) else 'no'
     return value, result

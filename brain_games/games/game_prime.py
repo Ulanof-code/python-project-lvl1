@@ -1,6 +1,7 @@
 from random import randint
 
-GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_DESCRIPTION = 'Answer "yes" if given number is prime. ' \
+                   'Otherwise answer "no".'
 
 
 def set_value_and_result():
