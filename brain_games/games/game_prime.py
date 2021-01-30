@@ -4,14 +4,14 @@ GAME_DESCRIPTION = 'Answer "yes" if given number is prime. ' \
                    'Otherwise answer "no".'
 
 
-def set_value_and_result():
+def generate_question_answer_pair():
     """The function sets the values and returns the correct result"""
     value = randint(1, 3571)
-    result = 'yes' if get_result(value) else 'no'
-    return value, result
+    answer = 'yes' if is_prime(value) else 'no'
+    return value, answer
 
 
-def get_result(value):
+def is_prime(value):
     """The function checks if the number is prime.
     The function returns True if the number is prime,
     otherwise it returns False"""

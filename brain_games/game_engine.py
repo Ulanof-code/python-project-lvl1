@@ -1,23 +1,24 @@
-from brain_games.round_counter import count
 from brain_games.greetings import welcome_user
 from prompt import string
+
+ROUNDS_COUNT = 3
 
 
 def start(game):
     user_name = welcome_user()
     print(game.GAME_DESCRIPTION)
-    counter = 0
-    while not count(counter):
-        value, result = game.set_value_and_result()
+    current_round = 0
+    while current_round < ROUNDS_COUNT:
+        value, result = game.generate_question_answer_pair()
         print(f'Question: {value}')
         answer = string('Your answer: ')
         if answer == result:
             print('Correct!')
-            counter += 1
+            current_round += 1
         else:
             print("'{}' is wrong answer ;(. Correct answer was '{}'."
                   "Let's try again, {}!"
                   .format(answer, result, user_name))
             return
-    if count(counter):
+    else:
         print('Congratulations, {}!'.format(user_name))

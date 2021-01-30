@@ -4,15 +4,15 @@ from random import randint
 GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def set_value_and_result():
+def generate_question_answer_pair():
     """The function returns the value to start the game
      and the correct answer"""
     value = randint(0, 100)
-    result = 'yes' if get_result(value) else 'no'
-    return value, result
+    answer = 'yes' if is_even(value) else 'no'
+    return value, answer
 
 
-def get_result(value):
+def is_even(value):
     """The function checks whether the value is even or odd.
      If the value is even,it is True,
      if it is odd, it is False."""
