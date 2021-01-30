@@ -1,5 +1,5 @@
-from brain_games.common_components.round_counter import count
-from brain_games.common_components.greetings import welcome_user
+from brain_games.round_counter import count
+from brain_games.greetings import welcome_user
 from prompt import string
 
 
