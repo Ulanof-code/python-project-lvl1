@@ -14,7 +14,7 @@ def generate_question_answer_pair():
     step = randint(2, 5)
     final_value = randint(step * 10, 50)
     start_value = randint(0, (final_value - (step * 10)))
-    secret_numb = randint(0, len(range(start_value, final_value, step)) - 1)  # noqa E501
+    secret_numb = randint(0, len(range(start_value, final_value, step)) - 1)
     progression = build_list(start_value, final_value, step)
     answer = str(progression[secret_numb])
     progression[secret_numb] = ".."
