@@ -1,3 +1,9 @@
+### Description
+This is the "Brain Games" game packet. You must enter your name to start the game. The packet consists of five games: check for parity; whether a number is prime; calculator game; calculate the greatest common divisor; guess the missing step in an arithmetic progression. 
+
+Good luck!
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Ulanof-code/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Ulanof-code/python-project-lvl1/actions)
 ![Python package](https://github.com/Ulanof-code/python-project-lvl1/workflows/Python%20package/badge.svg)
