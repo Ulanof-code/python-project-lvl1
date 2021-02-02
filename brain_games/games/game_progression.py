@@ -3,7 +3,7 @@ from random import randint
 GAME_DESCRIPTION = 'What number is missing in the progression?'
 
 
-def generate_question_answer_pair():
+def generate_question_answer():
     """
     The step variable is the step of the progression;
     The final_step variable is the final value of the whole progression;

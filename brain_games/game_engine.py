@@ -9,7 +9,7 @@ def start(game):
     print(game.GAME_DESCRIPTION)
     current_round = 0
     while current_round < ROUNDS_COUNT:
-        question, correct_answer = game.generate_question_answer_pair()
+        question, correct_answer = game.generate_question_answer()
         print(f'Question: {question}')
         player_answer = string('Your answer: ')
         if player_answer == correct_answer:
